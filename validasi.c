@@ -1,3 +1,23 @@
+//***********************************************************//
+//                      [ Source Code ]
+//
+// Institution: Institut Teknologi Bandung
+// Name: A2
+// File Name: validasi.c
+// Dependency : stdio.h, stdlib.h, string.h
+//
+// Description:
+// Fungsi untuk validasi input
+//
+// Status:
+// 1. Gihon Marten Tumbelaka - 13217038 : Buat validasi kode praktikum, rombongan, dan kode asisten.
+// 2. <Nama Praktikan> - <NIM> : Fix the bug where number 2 printed twice
+//***********************************************************//
+
+//BELOM LENGKAP:
+//Belom ada validasi minggu, hari, sama ruangan
+//Itu validasi kode prak.,rombongan, sama kode assisten belum tentu benar 100%. Jadi kalo ada yg salah silahkan debug saja.
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
