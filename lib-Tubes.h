@@ -27,7 +27,7 @@ typedef struct Dbs{ //Tipe data untuk menyimpan data asisten dan praktikum pada 
     Dbs_Week_PrakT Prak[15];
     Dbs_Week_AsistenT Asist[15];
     
-} Dbs;
+} Dbs_Type;
     
 //---------------------------------------------------------    
 typedef struct Rule_List_perWeekType{ //Tipe data untuk menyimpan sebuah data hari libur pada sebuah minggu
