@@ -21,19 +21,22 @@ typedef struct Dbs_Week_AsistenT{ //Tipe data untuk menyimpan data asisten pada 
 
 } Dbs_Week_AsistenT;
 
+//------------------------------------------------------
+
 typedef struct Dbs{ //Tipe data untuk menyimpan data asisten dan praktikum pada minggu 2 sampai dengan 15 (full)
     Dbs_Week_PrakT Prak[15];
     Dbs_Week_AsistenT Asist[15];
     
 } Dbs;
     
-    
+//---------------------------------------------------------    
 typedef struct Rule_List_perWeekType{ //Tipe data untuk menyimpan sebuah data hari libur pada sebuah minggu
     int Week;
     char Day[10];
 
 } Rule_List_perWeekType;
 
+//-------------------------------------------------------
 typedef struct Rule_List_Type{ //Tipe data untuk menyimpan data hari libur pada praktikum
     int len; //Banyak hari libur pada list
     Rule_List_perWeekType List[65];
