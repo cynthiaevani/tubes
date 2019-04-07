@@ -9,7 +9,7 @@ struct rombpraktikum{
 };
 
 int main(){
-    char kodeprak[10];
+    char kodeprak[10], asst[10];
     struct rombpraktikum rombongan;
 
     printf("Pilih Kode Praktikum (EL2205, EL2208, EB2200): ");
@@ -45,6 +45,17 @@ int main(){
             printf("Input tidak valid.\n");
             printf("Rombongan (A atau B): ");
             scanf("%s", &rombongan.ptb);}
+    }
+    
+    printf("Pilih Asisten (A-N): ");
+    scanf("%s", &asst);
+    while(strcmp(asst,"A")!= 0&&strcmp(asst,"B")!= 0&&strcmp(asst,"C")!= 0&&strcmp(asst,"D")!= 0
+          &&strcmp(asst,"E")!= 0&&strcmp(asst,"F")!= 0&&strcmp(asst,"G")!= 0&&strcmp(asst,"H")!= 0
+          &&strcmp(asst,"I")!= 0&&strcmp(asst,"J")!= 0&&strcmp(asst,"K")!= 0&&strcmp(asst,"L")!= 0
+          &&strcmp(asst,"M")!= 0&&strcmp(asst,"N")!= 0){
+        printf("Input tidak valid.\n");
+        printf("Pilih Asisten (A-N): ");
+        scanf("%s", &asst);
     }
     return 0;
 }
