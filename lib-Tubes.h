@@ -11,7 +11,7 @@ typedef struct Dbs_Day_PrakT{ //Tipe data untuk memuat data praktikum pada suatu
     
 } Dbs_Day_PrakT;
 
-typedef struct Dbs_Day_AsistenT{
+typedef struct Dbs_Day_AsistenT{ //Tipe data untuk memuat data asisten pada suatu hari
     char LAB1[4];
     char LAB2[4];
     char LAB3[4];
