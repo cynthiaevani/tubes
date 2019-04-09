@@ -26,26 +26,37 @@
 //Perintah keluar hanya bisa dimasukkan di kode praktikum
 //Kalau hari sabtu atau minggu, pesan error --> di validasi
 
+Dbs_Type Prak;
 
 void manual_schedule()
 {
-    //Start variable declaration
+    //Deklarasi variabel
     int cekquit;
-    char *kodeprak, *rombongan, *minggu, *hari, *ruangan;
-    //End declaration
+    char kodeprak[7];
+    char rombongan[4];
+    int minggu;
+    char hari[10];
+    char ruangan[4];
+    //End deklarasi
     
     cekquit = (strcmp(kodeprak,"q")||strcmp(kodeprak,"Q")); //bernilai 1 jika input "q" atau "Q"
 
     printf("[Mode Schedule]\n");
     printf("Isi 'q' atau 'Q' untuk kembali ke menu\n");
     
+    //Input dan validasi
     Validasi_KodePrak(kodeprak);
     while(cekquit == 0){
+        //Input dan validasi
         Validasi_Rombongan(kodeprak, rombongan);
         Validasi_Minggu(minggu);
         Validasi_Hari(hari);
         Validasi_Ruangan(...);
         Validasi_KodePrak(kodeprak, rombongan);
+        
+        //Assign
+        Prak[minggu].hari[ruangan]->Kode = kodeprak;
+        Prak[minggu].hari[ruangan]->Romb = rombongan;
     }
     if(cekquit == 1){
         exit(0);
