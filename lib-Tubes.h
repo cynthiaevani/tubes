@@ -1,3 +1,38 @@
+//***********************************************************//
+
+//                      [ Source Code ]
+
+//
+
+// Institution: Institut Teknologi Bandung
+
+// Name: A2
+
+// File Name: lib-Tubes.h
+
+// Dependency : stdio.h, stdlib.h, string.h
+
+//
+
+// Description:
+
+// Library untuk database menyimpan schedule praktikum, schedule asisten, dan daftar hari libur
+
+//
+
+// Status:
+
+// 1. Christofel Rio Goenawan - 13217026
+
+// 2. <Nama Praktikan> - <NIM> : Fix the bug where number 2 printed twice
+
+//***********************************************************//
+
+
+
+//BELOM LENGKAP: -
+
+
 #ifndef LIB-TUBES_H
 #define LIB-TUBES_H
 #include <stdio.h>
