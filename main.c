@@ -14,9 +14,6 @@
 // 2. <Nama Praktikan> - <NIM> : Fix the bug where number 2 printed twice 
 //***********************************************************//
 
-//Last debugged: 9 Apr 18.42 by Cynthia
-//  Nambah dependency
-
 //BELOM LENGKAP:
 //Deklarasi fungsi
 //Link ke fungsinya
