@@ -28,10 +28,8 @@
 
 //ASUMSI:
 //Nama proyek tidak lebih dari 30 karakter
-
-//DEKLARASI FUNGSI
-/* Insert function declaration here */
-
+//Schedule harus sudah ada sebelum assign asisten secara manual
+//Masukan file eksternal selalu benar
 
 int main() {
     int mainchoice, subchoice;
