@@ -36,14 +36,13 @@ void manual_schedule()
     char hari[10];
     char ruangan[4];
     //End deklarasi
-    
-    cekquit = (strcmp(kodeprak,"q")||strcmp(kodeprak,"Q")); //bernilai 1 jika input "q" atau "Q"
 
     printf("[Mode Schedule]\n");
     printf("Isi 'q' atau 'Q' untuk kembali ke menu\n");
     
     //Input dan validasi
     Validasi_KodePrak(kodeprak);
+    cekquit = (strcmp(kodeprak,"q")||strcmp(kodeprak,"Q")); //bernilai 1 jika input "q" atau "Q"
     while(cekquit == 0){
         //Input dan validasi
         Validasi_Rombongan(kodeprak, rombongan);
@@ -51,6 +50,7 @@ void manual_schedule()
         Validasi_Hari(hari);
         Validasi_Ruangan(ruangan);
         Validasi_KodePrak(kodeprak, rombongan);
+        cekquit = (strcmp(kodeprak,"q")||strcmp(kodeprak,"Q")); //bernilai 1 jika input "q" atau "Q"
         
         //Assign
         Prak[minggu].hari[ruangan]->Kode = kodeprak;
