@@ -14,7 +14,6 @@
 //***********************************************************//
 
 //BELOM LENGKAP:
-//Deklarasi fungsi
 //Link ke fungsinya
 
 #include <stdio.h>
