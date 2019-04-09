@@ -34,7 +34,7 @@ void manual_schedule()
     char *kodeprak, *rombongan, *minggu, *hari, *ruangan;
     //End declaration
     
-    cekquit = (strcmp(kodeprak,"q")||strcmp(kodeprak,"Q"));
+    cekquit = (strcmp(kodeprak,"q")||strcmp(kodeprak,"Q")); //bernilai 1 jika input "q" atau "Q"
 
     printf("[Mode Schedule]\n");
     printf("Isi 'q' atau 'Q' untuk kembali ke menu\n");
