@@ -14,7 +14,6 @@
 //***********************************************************//
 
 //BELOM LENGKAP:
-//Deklarasi fungsi
 //Link ke fungsinya
 
 #include <stdio.h>
@@ -50,7 +49,7 @@ void manual_schedule()
         Validasi_Rombongan(kodeprak, rombongan);
         Validasi_Minggu(minggu);
         Validasi_Hari(hari);
-        Validasi_Ruangan(...);
+        Validasi_Ruangan(ruangan);
         Validasi_KodePrak(kodeprak, rombongan);
         
         //Assign
