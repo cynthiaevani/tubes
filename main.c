@@ -4,7 +4,7 @@
 // Institution: Institut Teknologi Bandung
 // Name: A2/4
 // File Name: main.c
-// Dependency : stdio.h, stdlib.h, string.h
+// Dependency : stdio.h, stdlib.h, string.h, LIB-TUBES.h
 //
 // Description:
 // Program utama.
@@ -14,7 +14,8 @@
 // 2. <Nama Praktikan> - <NIM> : Fix the bug where number 2 printed twice 
 //***********************************************************//
 
-//MAIN
+//Last debugged: 9 Apr 18.42 by Cynthia
+//  Nambah dependency
 
 //BELOM LENGKAP:
 //Deklarasi fungsi
@@ -23,6 +24,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "LIB-TUBES.h"
 
 //ASUMSI:
 //Nama proyek tidak lebih dari 30 karakter
