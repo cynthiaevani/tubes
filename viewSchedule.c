@@ -10,6 +10,8 @@
 // Menampilkan Data Schedule
 // Status:
 // 1. Christian Justin - 13217031 : Buat menampilkan Schedule
+// 2. Cynthia Evani - 13217045: Menambahkan library LIB-TUBES.h,
+//  mengganti nama fungsi
 //***********************************************************//
 
 //BELOM LENGKAP:
@@ -19,46 +21,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "LIB-TUBES.h"
 
-struct praktikum{
-    char rombongan[5];
-    int minggu;
-    char hari[10];
-    char ruangan[5][10];
-};
-
-struct inputpraktikum{
-    struct praktikum elka;
-    struct praktikum pmc;
-    struct praktikum ptb;
-};
-
-struct Dbs_Week_PrakT{ //Tipe data untuk memuat data praktikum pada suatu minggu
-    char Senin[5][10]; //Array of string di hari senin yang isinya {LAB1[0], LAB2[1], LAB3[2], LSS[3]}
-    char Selasa[5][10]; //Array of string di hari selasa yang isinya {LAB1, LAB2, LAB3, LSS}
-    char Rabu[5][10]; //Array of string di hari rabu yang isinya {LAB1, LAB2, LAB3, LSS}
-    char Kamis[5][10]; //Array of string di hari kamis yang isinya {LAB1, LAB2, LAB3, LSS}
-    char Jumat[5][10]; //Array of string di hari jumat yang isinya {LAB1, LAB2, LAB3, LSS}
-
-};
-
-
-struct Dbs_Week_AsistenT{ //Tipe data untuk menyimpan data asisten pada suatu minggu
-    char Senin[4];
-    char Selasa[4];
-    char Rabu[4];
-    char Kamis[4];
-    char Jumat[4];
-
-};
-
-struct Dbs{ //Tipe data untuk menyimpan data asisten dan praktikum pada minggu 2 sampai dengan 15 (full)
-    struct Dbs_Week_PrakT Prak[15];
-    struct Dbs_Week_AsistenT Asist[15];
-    
-};
-
-void main(){
+void View_Schedule(){
     struct Dbs tabelOut;
     printf("|-------------------------------------------------------------------------------|\n");
     printf("|Ruang Praktikum|     LAB1\t|     LAB2\t|      LAB3\t|      LSS\t|\n");
