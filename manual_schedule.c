@@ -17,8 +17,10 @@
 //BELOM LENGKAP:
 //Deklarasi fungsi
 //Link ke fungsinya
-//ANJING GUE BARU SADAR MISAL INPUTNYA A TAPI ROMBONGAN ADA A1, A2, A3 GITU ITU
-//  INPUTNYA JADI 3 RUANGAN --> solved pake struct, kalo jelek debug aja
+
+//Last debugged: 9 Apr 17.59 by Cynthia
+//  Benerin fungsi validasi
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -51,27 +53,17 @@ void manual_schedule()
     printf("Isi 'q' atau 'Q' untuk kembali ke menu\n");
     
     while(cekquit == 0){
-        printf("Pilih Kode Praktikum (EL2205, EL2208, EB2200): ");
-        scanf("%s",kodeprak);
-        Validasi_KodePrak(kodeprak); //Gihon
+        Validasi_KodePrak(kodeprak);
         if(strcmp(kodeprak,"EL2205") == 1){
-            printf("\nRombongan (A1, A2, B1, B2, C1, atau C2): ");
-            scanf("%s",rombongan);
-            Validasi_RombonganEL2205(rombongan);//Justin
+            Validasi_Rombongan(rombongan.elka);
         }
         else if(strcmp(kodeprak,"EL2208") == 1){
-            printf("\nRombongan (A1, A2, A3, B1, B2, B3, atau C): ");
-            scanf("%s",rombongan);
-            Validasi_RombonganEL2208(rombongan);//taudah
+            Validasi_Rombongan(rombongan.pmc);//taudah
         }
         else{
-            printf("\nRombongan (A atau B): ");
-            scanf("%s",rombongan);
-            Validasi_RombonganEB2200(rombongan);//taudah
+            Validasi_Rombongan(rombongan.ptb);//taudah
         }
         
-        printf("\nMinggu ke: ");
-        scanf("%s",minggu);
         Validasi_Minggu(minggu);
         
         printf("\nRuangan: ");
