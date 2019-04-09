@@ -18,10 +18,6 @@
 //Deklarasi fungsi
 //Link ke fungsinya
 
-//Last debugged: 9 Apr 17.59 by Cynthia
-//  Benerin fungsi validasi
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -34,7 +30,10 @@
 
 void manual_schedule()
 {
+    //Start variable declaration
     int cekquit;
+    char *kodeprak, *rombongan, *minggu, *hari, *ruangan;
+    //End declaration
     
     cekquit = (strcmp(kodeprak,"q")||strcmp(kodeprak,"Q"));
 
@@ -42,16 +41,7 @@ void manual_schedule()
     printf("Isi 'q' atau 'Q' untuk kembali ke menu\n");
     
     while(cekquit == 0){
-        Validasi_KodePrak(kodeprak);
-        if(strcmp(kodeprak,"EL2205") == 1){
-            Validasi_Rombongan(rombongan.elka);
-        }
-        else if(strcmp(kodeprak,"EL2208") == 1){
-            Validasi_Rombongan(rombongan.pmc);//taudah
-        }
-        else{
-            Validasi_Rombongan(rombongan.ptb);//taudah
-        }
+        Validasi_KodePrak(kodeprak, rombongan);
         
         Validasi_Minggu(minggu);
         
