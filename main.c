@@ -25,6 +25,7 @@
 //Nama proyek tidak lebih dari 30 karakter
 //Schedule harus sudah ada sebelum assign asisten secara manual
 //Masukan file eksternal selalu benar
+//Jika schedule diubah dan ada asisten yang berhalangan, dilakukan manual
 
 int main() {
     int mainchoice, subchoice;
