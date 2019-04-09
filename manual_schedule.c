@@ -44,8 +44,8 @@ void manual_schedule()
         Validasi_Rombongan(kodeprak, rombongan);
         Validasi_Minggu(minggu);
         Validasi_Hari(hari);
-        Validasi_KodePrak(kodeprak, rombongan);
         Validasi_Ruangan(...);
+        Validasi_KodePrak(kodeprak, rombongan);
     }
     if(cekquit == 1){
         exit(0);
