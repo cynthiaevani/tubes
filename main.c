@@ -69,25 +69,25 @@ int main() {
         
         while(subchoice != 8){
             if(subchoice == 1){
-                View_Schedule();//Justin
+                View_Schedule();
             }
             else if(subchoice == 2){
-                Manual_Schedule();//Cynthia
+                Manual_Schedule();
             }
             else if(subchoice == 3){
-                View_Assistant();//Justin
+                View_Assistant();
             }
             else if(subchoice == 4){
-                Manual_Assistant();//Gihon
+                Manual_Assistant();
             }
             else if(subchoice == 5){
-                Automatic_Schedule();//keroyokan
+                Automatic_Schedule();
             }
             else if(subchoice == 6){
-                Automatic_Assistant();//keroyokan
+                Automatic_Assistant();
             }
             else if(subchoice == 7){
-                Rule_Checker();//Ofel
+                Rule_Checker();
             }
         }
         if(subchoice == 8){
