@@ -4,12 +4,19 @@
 #include <stdlib.h>
 
 
+typedef struct Praktikum_Type{// Tipe data untuk memuat data praktikum dan rombongan pada suatu hari
+    char Prak[7];
+    char Romb[4];
+    
+} Praktikum_Type;
+
+
 typedef struct Dbs_Week_PrakT{ //Tipe data untuk memuat data praktikum pada suatu minggu
-    char Senin[4][10];
-    char Selasa[4][10];
-    char Rabu[4][10];
-    char Kamis[4][10];
-    char Jumat[4][10];
+    Praktikum_Type Senin[4];
+    Praktikum_Type Selasa[4];
+    Praktikum_Type Rabu[4];
+    Praktikum_Type Kamis[4];
+    Praktikum_Type Jumat[4];
 
 } Dbs_Week_PrakT;
 
