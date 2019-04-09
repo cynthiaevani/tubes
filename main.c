@@ -69,29 +69,29 @@ int main() {
         
         while(subchoice != 8){
             if(subchoice == 1){
-                View_Schedule(bdwbd2bk);//Justin
+                View_Schedule();//Justin
             }
             else if(subchoice == 2){
-                Manual_Schedule(ndkje3jkd3b);//Cynthia
+                Manual_Schedule();//Cynthia
             }
             else if(subchoice == 3){
-                View_Assistant(dkbewdjkbjkd);//Justin
+                View_Assistant();//Justin
             }
             else if(subchoice == 4){
-                Manual_Assistant(bskjwbdws);//Gihon
+                Manual_Assistant();//Gihon
             }
             else if(subchoice == 5){
-                Automatic_Schedule(bewbdw);//keroyokan
+                Automatic_Schedule();//keroyokan
             }
             else if(subchoice == 6){
-                Automatic_Assistant(bcdwjkbewk);//keroyokan
+                Automatic_Assistant();//keroyokan
             }
             else if(subchoice == 7){
-                Rule_Checker(bjkbdejkwbd);//Ofel
+                Rule_Checker();//Ofel
             }
         }
         if(subchoice == 8){
-            Save_and_Quit(kjbdjkbe2);
+            Save_and_Quit();
         }
     }
     
