@@ -84,5 +84,5 @@ typedef struct Rule_List_Type{ //Tipe data untuk menyimpan data hari libur pada 
     int len; //Banyak hari libur pada list
     Rule_List_perWeekType List[65];
 
-}
+} Rule_List_Type;
 #endif
