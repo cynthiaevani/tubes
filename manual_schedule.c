@@ -24,7 +24,6 @@
 
 //ASUMSI
 //Perintah keluar hanya bisa dimasukkan di kode praktikum
-//Kalau hari sabtu atau minggu, pesan error --> di validasi
 
 Dbs_Type Prak;
 
