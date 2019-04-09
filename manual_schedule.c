@@ -10,8 +10,7 @@
 // Fungsi untuk membuat schedule secara manual
 //
 // Status:
-// 1. Cynthia Evani - 13217045 : Create the file
-// 2. <Nama Praktikan> - <NIM> : Fix the bug where number 2 printed twice
+// 1. Cynthia Evani - 13217045 : Buat manual schedule
 //***********************************************************//
 
 //BELOM LENGKAP:
