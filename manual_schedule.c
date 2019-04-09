@@ -39,26 +39,13 @@ void manual_schedule()
     printf("[Mode Schedule]\n");
     printf("Isi 'q' atau 'Q' untuk kembali ke menu\n");
     
+    Validasi_KodePrak(kodeprak);
     while(cekquit == 0){
-        Validasi_KodePrak(kodeprak, rombongan);
-        
+        Validasi_Rombongan(kodeprak, rombongan);
         Validasi_Minggu(minggu);
-        
-        printf("\nRuangan: ");
-        if(strlen(rombongan)>1){ //Kebanyakan yang cuma 1 karakter ada subnya
-            if((strcmp(kodeprak,"EL2205") == 1)){ //Kalo EL2205 pasti 2 ruangan
-                printf("Ruangan 1:"); scanf("%s",ruangan->i);
-                printf("Ruangan 2:"); scanf("%s",ruangan->j);
-            }
-            else if((strcmp(kodeprak,"EL2208") == 1)&&((strcmp(rombongan,"A")==1)||(strcmp(rombongan,"B")==1))){
-                printf("Ruangan 1:"); scanf("%s",ruangan->i);
-                printf("Ruangan 2:"); scanf("%s",ruangan->j);
-                printf("Ruangan 3:"); scanf("%s",ruangan->k);
-            }
-        }
-        else{
-            printf("Ruangan:"); scanf("%s",ruangan->i);
-        }
+        Validasi_Hari(hari);
+        Validasi_KodePrak(kodeprak, rombongan);
+        Validasi_Ruangan(...);
     }
     if(cekquit == 1){
         exit(0);
