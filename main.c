@@ -52,7 +52,7 @@ int main() {
         else if(mainchoice == 2){
             printf("===== Memuat Proyek dari Berkas =====");
             printf("Masukkan nama proyek yang ingin dimuat: "); scanf("%s", projectname);
-            Load_Project(strcpy(projectname).csv);//Ofel
+            Load_Project(strcpy(projectname).csv);
         }
         //Submenu
         printf("[Menu Utama]\n");
