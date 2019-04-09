@@ -10,8 +10,7 @@
 // Program utama.
 //
 // Status:
-// 1. Cynthia Evani - 13217045 : Create the file
-// 2. <Nama Praktikan> - <NIM> : Fix the bug where number 2 printed twice 
+// 1. Cynthia Evani - 13217045 : Buat main
 //***********************************************************//
 
 //BELOM LENGKAP:
