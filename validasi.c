@@ -28,10 +28,7 @@ struct rombpraktikum{
     char ptb[10];
 };
 
-int main(){
-    char kodeprak[10], asst[10];
-    struct rombpraktikum rombongan;
-
+void Validasi_KodePrak (char kodeprak[10]){
     printf("Pilih Kode Praktikum (EL2205, EL2208, EB2200): ");
     scanf("%s", &kodeprak);
     while(strcmp(kodeprak,"EL2205")!= 0 && strcmp(kodeprak,"EL2208")!= 0 && strcmp(kodeprak,"EB2200")!= 0){
@@ -39,7 +36,9 @@ int main(){
         printf("Pilih Kode Praktikum (EL2205, EL2208, EB2200): ");
         scanf("%s", &kodeprak);
     }
+}
 
+void Validasi_Rombongan (char kodeprak[10], struct rombpraktikum rombongan){
     if(strcmp(kodeprak,"EL2205")== 0){
         printf("Rombongan (A1,A2,B1,B2,C1, atau C2): ");
         scanf("%s", &rombongan.elka);
@@ -66,7 +65,9 @@ int main(){
             printf("Rombongan (A atau B): ");
             scanf("%s", &rombongan.ptb);}
     }
-    
+}
+
+void Validasi_Asisten (char *asst){
     printf("Pilih Asisten (A-N): ");
     scanf("%s", &asst);
     while(strcmp(asst,"A")!= 0&&strcmp(asst,"B")!= 0&&strcmp(asst,"C")!= 0&&strcmp(asst,"D")!= 0
@@ -77,5 +78,4 @@ int main(){
         printf("Pilih Asisten (A-N): ");
         scanf("%s", &asst);
     }
-    return 0;
 }
