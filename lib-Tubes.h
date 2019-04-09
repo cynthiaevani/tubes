@@ -40,14 +40,14 @@
 
 
 typedef struct Praktikum_Type{// Tipe data untuk memuat data praktikum dan rombongan pada suatu hari
-    char Prak[7];
-    char Romb[4];
-    
+    char Kode[7]; //Berisi kode praktikum
+    char Romb[4]; //Berisi rombongan praktikum
+        
 } Praktikum_Type;
 
 
 typedef struct Dbs_Week_PrakT{ //Tipe data untuk memuat data praktikum pada suatu minggu
-    Praktikum_Type Senin[4];
+    Praktikum_Type Senin[4]; 
     Praktikum_Type Selasa[4];
     Praktikum_Type Rabu[4];
     Praktikum_Type Kamis[4];
