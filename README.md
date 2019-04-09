@@ -1,2 +1,2 @@
 Semangat Gaess!!
-J- 17
+J- 15
