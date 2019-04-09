@@ -4,7 +4,7 @@
 // Institution: Institut Teknologi Bandung
 // Name: A2/4
 // File Name: manual_schedule.c
-// Dependency : stdio.h, stdlib.h, string.h
+// Dependency : stdio.h, stdlib.h, string.h, LIB-TUBES.h
 //
 // Description:
 // Fungsi untuk membuat schedule secara manual
@@ -25,6 +25,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <LIB-TUBES.h>
 
 //ASUMSI
 //Perintah keluar hanya bisa dimasukkan di kode praktikum
@@ -33,19 +34,7 @@
 
 void manual_schedule()
 {
-    typedef struct ruangan_s{
-        char *i, *j, *k;
-    }ruangan_t;
-    
-    char *kodeprak, *rombongan, *minggu, *hari;
     int cekquit;
-    ruangan_t *ruangan;
-    
-    kodeprak = (char*)malloc(6*sizeof(char));
-    rombongan = (char*)malloc(2*sizeof(char));
-    minggu = (char*)malloc(2*sizeof(char));
-    hari = (char*)malloc(8*sizeof(char));
-    ruangan = (ruangan_t*)malloc(4*sizeof(ruangan_t));
     
     cekquit = (strcmp(kodeprak,"q")||strcmp(kodeprak,"Q"));
 
