@@ -22,12 +22,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-struct rombpraktikum{
-    char elka[10];
-    char pmc[10];
-    char ptb[10];
-};
-
 void Validasi_KodePrak (char kodeprak[10]){
     printf("Pilih Kode Praktikum (EL2205, EL2208, EB2200): ");
     scanf("%s", &kodeprak);
@@ -38,32 +32,32 @@ void Validasi_KodePrak (char kodeprak[10]){
     }
 }
 
-void Validasi_Rombongan (char kodeprak[10], struct rombpraktikum rombongan){
+void Validasi_Rombongan (char kodeprak[10], char rombongan[5]){
     if(strcmp(kodeprak,"EL2205")== 0){
         printf("Rombongan (A1,A2,B1,B2,C1, atau C2): ");
-        scanf("%s", &rombongan.elka);
-        while(strcmp(rombongan.elka,"A")!= 0 && strcmp(rombongan.elka,"B")!= 0 && strcmp(rombongan.elka,"C")!= 0 && strcmp(rombongan.elka,"A1")!= 0
-              && strcmp(rombongan.elka,"A2")!= 0 &&strcmp(rombongan.elka,"B1")!= 0 && strcmp(rombongan.elka,"B2")!= 0 && strcmp(rombongan.elka,"C1")!=0
-              &&strcmp(rombongan.elka,"C2")!= 0){
+        scanf("%s", &rombongan);
+        while(strcmp(rombongan,"A")!= 0 && strcmp(rombongan,"B")!= 0 && strcmp(rombongan,"C")!= 0 && strcmp(rombongan,"A1")!= 0
+              && strcmp(rombongan,"A2")!= 0 &&strcmp(rombongan,"B1")!= 0 && strcmp(rombongan,"B2")!= 0 && strcmp(rombongan,"C1")!=0
+              &&strcmp(rombongan,"C2")!= 0){
             printf("Input tidak valid.\n");
             printf("Rombongan (A1,A2,B1,B2,C1, atau C2): ");
-            scanf("%s", &rombongan.elka);}
+            scanf("%s", &rombongan);}
     } else if(strcmp(kodeprak,"EL2208")== 0){
         printf("Rombongan (A1, A2, A3, B1, B2, B3, atau C): ");
-        scanf("%s", &rombongan.pmc);
-        while(strcmp(rombongan.pmc,"A")!= 0&&strcmp(rombongan.pmc,"B")!= 0&&strcmp(rombongan.pmc,"C")!= 0&&
-              strcmp(rombongan.pmc,"A1")!=0&&strcmp(rombongan.pmc,"A2")!=0&&strcmp(rombongan.pmc,"A3")!= 0&&
-              strcmp(rombongan.pmc,"B1")!=0&&strcmp(rombongan.pmc,"B2")!=0&&strcmp(rombongan.pmc,"B3")!= 0){
+        scanf("%s", &rombongan);
+        while(strcmp(rombongan,"A")!= 0&&strcmp(rombongan,"B")!= 0&&strcmp(rombongan,"C")!= 0&&
+              strcmp(rombongan,"A1")!=0&&strcmp(rombongan,"A2")!=0&&strcmp(rombongan,"A3")!= 0&&
+              strcmp(rombongan,"B1")!=0&&strcmp(rombongan,"B2")!=0&&strcmp(rombongan,"B3")!= 0){
             printf("Input tidak valid.\n");
             printf("Rombongan (A1, A2, A3, B1, B2, B3, atau C): ");
-            scanf("%s", &rombongan.pmc);}
+            scanf("%s", &rombongan);}
     } else if(strcmp(kodeprak,"EB2200")== 0){
         printf("Rombongan (A atau B): ");
-        scanf("%s", &rombongan.ptb);
-        while(strcmp(rombongan.ptb,"A")!= 0&&strcmp(rombongan.ptb,"B")!= 0){
+        scanf("%s", &rombongan);
+        while(strcmp(rombongan,"A")!= 0&&strcmp(rombongan,"B")!= 0){
             printf("Input tidak valid.\n");
             printf("Rombongan (A atau B): ");
-            scanf("%s", &rombongan.ptb);}
+            scanf("%s", &rombongan);}
     }
 }
 
