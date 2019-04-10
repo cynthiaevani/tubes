@@ -11,7 +11,8 @@
 //
 // Status:
 // 1. Gihon Marten Tumbelaka - 13217038 : Buat validasi kode praktikum, rombongan, dan kode asisten.
-// 2. Christian Justin - 13217031 : Buat validasi minggu, hari, LAB.
+// 2. Christian Justin - 13217031 : Buat validasi minggu, hari, LAB. Menerima Input hingga input yang diterima berupa char "q" atau "Q"
+//                                  Mengolah input dan memasukkan input ke tabel data dengan tipe struct.
 //***********************************************************//
 
 //BELOM LENGKAP:
@@ -21,54 +22,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "LIB-TUBES.h"
 
-struct praktikum{
-    char rombongan[5];
-    int minggu;
-    char hari[10];
-    char ruangan[5][10];
-};
-
-struct inputpraktikum{
-    struct praktikum elka;
-    struct praktikum pmc;
-    struct praktikum ptb;
-};
-
-struct Praktikum_Type{// Tipe data untuk memuat data praktikum dan rombongan pada suatu hari
-    char Kode[7]; //Berisi kode praktikum
-    char Romb[4]; //Berisi rombongan praktikum
-        
-};
-
-struct Dbs_Week_PrakT{ //Tipe data untuk memuat data praktikum pada suatu minggu
-    struct Praktikum_Type Senin[5]; 
-    struct Praktikum_Type Selasa[5];
-    struct Praktikum_Type Rabu[5];
-    struct Praktikum_Type Kamis[5];
-    struct Praktikum_Type Jumat[5];
-
-} Dbs_Week_PrakT;
-
-
-struct Dbs_Week_AsistenT{ //Tipe data untuk menyimpan data asisten pada suatu minggu
-    char Senin[5][10];
-    char Selasa[5][10];
-    char Rabu[5][10];
-    char Kamis[5][10];
-    char Jumat[5][10];
-
-};
-
-struct Dbs{ //Tipe data untuk menyimpan data asisten dan praktikum pada minggu 2 sampai dengan 15 (full)
-    struct Dbs_Week_PrakT Prak[15];
-    struct Dbs_Week_AsistenT Asist[15];
-    
-};
-
-// KASUS : KALO UDH TERISI
-// KASUS : OUTPUT KODEPRAK-A1, KODEPRAK-A2
-// KASUS : PRAKTIKUM PMC SAMA ELKA BARENGAN
+// KASUS : KALO UDH TERISI(-)
+// KASUS : OUTPUT KODEPRAK-A1, KODEPRAK-A2(-)
+// KASUS : PRAKTIKUM PMC SAMA ELKA BARENGAN(-)
 
 int olahInput(){
     char kodeprak[10], asst[10];
