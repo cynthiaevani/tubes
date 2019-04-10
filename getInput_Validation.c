@@ -28,7 +28,7 @@
 // KASUS : OUTPUT KODEPRAK-A1, KODEPRAK-A2(-)
 // KASUS : PRAKTIKUM PMC SAMA ELKA BARENGAN(-)
 
-int olahInput(){
+void getInput_Validation(){
     char kodeprak[10], asst[10];
     struct inputpraktikum assign;
     struct Dbs tabelOut;
@@ -951,6 +951,5 @@ while(cekquit == 0){ // LOOPING UNTIL QUIT. HARUSNYA DI SAVE DI AKHIR
         }
         printf("|-------------------------------------------------------------------------------|\n");
     }
-    
-    return 0;
+   
 }
