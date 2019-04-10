@@ -37,24 +37,16 @@ void View_Schedule(){
     //{
         //for(int j = 0; j < 4; j++)
         //{
-            //strcpy(tabelOut.Prak[i].Senin[j], "EL2205-A1");
-            //strcpy(tabelOut.Prak[i].Selasa[j], "EL2205-A1");
-            //strcpy(tabelOut.Prak[i].Rabu[j], "EL2205-A1");
-            //strcpy(tabelOut.Prak[i].Kamis[j], "EL2205-A1");
-            //strcpy(tabelOut.Prak[i].Jumat[j], "EL2205-A1");
-        //}
-    //}
-
-    // EXAMPLE EMPTY WITH NULL
-    //for(int i = 0; i < 13; i++)
-    //{
-        //for(int j = 0; j < 4; j++)
-        //{
-            //strcpy(tabelOut.Prak[i].Senin[j] = NULL;
-            //strcpy(tabelOut.Prak[i].Selasa[j], NULL);
-            //strcpy(tabelOut.Prak[i].Rabu[j], NULL);
-            //strcpy(tabelOut.Prak[i].Kamis[j], NULL);
-            //strcpy(tabelOut.Prak[i].Jumat[j], NULL);
+            //strcpy(tabelOut.Prak[i].Senin[j].Kode, "EL2205");
+            //strcpy(tabelOut.Prak[i].Selasa[j].Kode, "EL2205");
+            //strcpy(tabelOut.Prak[i].Rabu[j].Kode, "EL2205");
+            //strcpy(tabelOut.Prak[i].Kamis[j].Kode, "EL2205");
+            //strcpy(tabelOut.Prak[i].Jumat[j].Kode, "EL2205");
+            //strcpy(tabelOut.Prak[i].Senin[j].Romb, "A1");
+            //strcpy(tabelOut.Prak[i].Selasa[j].Romb, "A1");
+            //strcpy(tabelOut.Prak[i].Rabu[j].Romb, "A1");
+            //strcpy(tabelOut.Prak[i].Kamis[j].Romb, "A1");
+            //strcpy(tabelOut.Prak[i].Jumat[j].Romb, "A1");            
         //}
     //}
 
@@ -63,11 +55,16 @@ void View_Schedule(){
     //{
         //for(int j = 0; j < 4; j++)
         //{
-            //strcpy(tabelOut.Prak[i].Senin[j], "       ");
-            //strcpy(tabelOut.Prak[i].Selasa[j], "       ");
-            //strcpy(tabelOut.Prak[i].Rabu[j], "       ");
-            //strcpy(tabelOut.Prak[i].Kamis[j], "       ");
-            //strcpy(tabelOut.Prak[i].Jumat[j], "       ");
+            //strcpy(tabelOut.Prak[i].Senin[j].Kode, "     ");
+            //strcpy(tabelOut.Prak[i].Selasa[j].Kode, "     ");
+            //strcpy(tabelOut.Prak[i].Rabu[j].Kode, "     ");
+            //strcpy(tabelOut.Prak[i].Kamis[j].Kode, "     ");
+            //strcpy(tabelOut.Prak[i].Jumat[j].Kode, "     ");
+            //strcpy(tabelOut.Prak[i].Senin[j].Romb, "  ");
+            //strcpy(tabelOut.Prak[i].Selasa[j].Romb, "  ");
+            //strcpy(tabelOut.Prak[i].Rabu[j].Romb, "  ");
+            //strcpy(tabelOut.Prak[i].Kamis[j].Romb, "  ");
+            //strcpy(tabelOut.Prak[i].Jumat[j].Romb, "  ");            
         //}
     //}
 
@@ -80,39 +77,39 @@ void View_Schedule(){
                 printf("Senin  |");
                 for(int k = 0; k < 4; k++)
                 {
-                    printf("   %s\t|", tabelOut.Prak[i].Senin[k]);
+                    printf("   %s-%s\t|", tabelOut.Prak[i].Senin[k].Kode, tabelOut.Prak[i].Senin[k].Romb);
                 }
                 printf("\n");
             } else if (j%5 == 1) {
                 printf("Selasa |");
                 for(int k = 0; k < 4; k++)
                 {
-                    printf("   %s\t|", tabelOut.Prak[i].Selasa[k]);
+                    printf("   %s-%s\t|", tabelOut.Prak[i].Selasa[k].Kode, tabelOut.Prak[i].Selasa[k].Romb);
                 }
                 printf("\n");
             } else if (j%5 == 2) {
                 printf("Rabu   |");
                 for(int k = 0; k < 4; k++)
                 {
-                    printf("   %s\t|", tabelOut.Prak[i].Rabu[k]);
+                    printf("   %s-%s\t|", tabelOut.Prak[i].Rabu[k].Kode, tabelOut.Prak[i].Rabu[k].Romb);
                 }
                 printf("\n");
             } else if (j%5 == 3) {
                 printf("Kamis  |");
                 for(int k = 0; k < 4; k++)
                 {
-                    printf("   %s\t|", tabelOut.Prak[i].Kamis[k]);
+                    printf("   %s-%s\t|", tabelOut.Prak[i].Kamis[k].Kode, tabelOut.Prak[i].Kamis[k].Romb);
                 }
                 printf("\n");
             } else if (j%5 == 4) {
                 printf("Jumat  |");
                 for(int k = 0; k < 4; k++)
                 {
-                    printf("   %s\t|", tabelOut.Prak[i].Jumat[k]);
+                    printf("   %s-%s\t|", tabelOut.Prak[i].Jumat[k].Kode, tabelOut.Prak[i].Jumat[k].Romb);
                 }
                 printf("\n");
             }
         }
         printf("|-------------------------------------------------------------------------------|\n");
-    }    
+    }
 }
