@@ -21,13 +21,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "LIB_T"
+#include "LIB-TUBES.h"
 
-// KASUS : KALO UDH TERISI
-// KASUS : OUTPUT KODEPRAK-A1, KODEPRAK-A2
+// ASUMSI : JIKA TELAH TERISI, INPUT TIDAK ADA DIMASUKKAN KE TABEL
 // KASUS : PRAKTIKUM PMC SAMA ELKA BARENGAN
 
-int main(){
+void manual_schedule(){
     char kodeprak[10], asst[10];
     struct inputpraktikum assign;
     struct Dbs tabelOut;
@@ -1011,53 +1010,5 @@ while(cekquit == 0){ // LOOPING UNTIL QUIT. HARUSNYA DI SAVE DI AKHIR
             }
         }
     }
-}
-
-        // MENAMPILKAN OUTPUT
-    for(int i = 0; i < 13; i++)
-    {
-        for(int j = 0; j < 5; j++)
-        {
-            printf("|   %d\t|", ((j/5)+3+i));
-            if (j % 5 == 0) {
-                printf("Senin  |");
-                for(int k = 0; k < 4; k++)
-                {
-                    printf("   %s-%s\t|", tabelOut.Prak[i].Senin[k].Kode, tabelOut.Prak[i].Senin[k].Romb);
-                }
-                printf("\n");
-            } else if (j%5 == 1) {
-                printf("Selasa |");
-                for(int k = 0; k < 4; k++)
-                {
-                    printf("   %s-%s\t|", tabelOut.Prak[i].Selasa[k].Kode, tabelOut.Prak[i].Selasa[k].Romb);
-                }
-                printf("\n");
-            } else if (j%5 == 2) {
-                printf("Rabu   |");
-                for(int k = 0; k < 4; k++)
-                {
-                    printf("   %s-%s\t|", tabelOut.Prak[i].Rabu[k].Kode, tabelOut.Prak[i].Rabu[k].Romb);
-                }
-                printf("\n");
-            } else if (j%5 == 3) {
-                printf("Kamis  |");
-                for(int k = 0; k < 4; k++)
-                {
-                    printf("   %s-%s\t|", tabelOut.Prak[i].Kamis[k].Kode, tabelOut.Prak[i].Kamis[k].Romb);
-                }
-                printf("\n");
-            } else if (j%5 == 4) {
-                printf("Jumat  |");
-                for(int k = 0; k < 4; k++)
-                {
-                    printf("   %s-%s\t|", tabelOut.Prak[i].Jumat[k].Kode, tabelOut.Prak[i].Jumat[k].Romb);
-                }
-                printf("\n");
-            }
-        }
-        printf("|-------------------------------------------------------------------------------|\n");
-    }
-    
-    return 0;
+}   
 }
