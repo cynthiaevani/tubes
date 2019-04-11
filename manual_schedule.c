@@ -34,7 +34,7 @@ void manual_schedule()
     char rombongan[4];
     int minggu;
     char hari[10];
-    char ruangan[4];
+    int ruangan[4];
     //End deklarasi
 
     printf("[Mode Schedule]\n");
