@@ -26,15 +26,22 @@
 
 Dbs_Type Prak;
 
+int cekquit(kodeprak){
+    int cek;
+    
+    cek = (strcmp(kodeprak,"q")||strcmp(kodeprak,"Q")); //bernilai 1 jika input "q" atau "Q"
+    return cek;
+}
+
 void manual_schedule()
 {
     //Deklarasi variabel
-    int cekquit;
     char kodeprak[7];
     char rombongan[4];
     int minggu;
     char hari[10];
     int ruangan[4];
+    int cek;
     //End deklarasi
 
     printf("[Mode Schedule]\n");
@@ -42,21 +49,21 @@ void manual_schedule()
     
     //Input dan validasi
     Validasi_KodePrak(kodeprak);
-    cekquit = (strcmp(kodeprak,"q")||strcmp(kodeprak,"Q")); //bernilai 1 jika input "q" atau "Q"
-    while(cekquit == 0){
+    cek = cekquit(kodeprak);
+    while(cek == 0){
         //Input dan validasi
         Validasi_Rombongan(kodeprak, rombongan);
         Validasi_Minggu(minggu);
         Validasi_Hari(hari);
         Validasi_Ruangan(ruangan);
         Validasi_KodePrak(kodeprak, rombongan);
-        cekquit = (strcmp(kodeprak,"q")||strcmp(kodeprak,"Q")); //bernilai 1 jika input "q" atau "Q"
+        cek = cekquit(kodeprak);
         
         //Assign
         Prak[minggu].hari[ruangan]->Kode = kodeprak;
         Prak[minggu].hari[ruangan]->Romb = rombongan;
     }
-    if(cekquit == 1){
+    if(cek == 1){
         exit(0);
     }
 }
