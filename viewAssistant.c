@@ -18,13 +18,9 @@
 //Untuk kasus terisi semua, tabel udh dirapiin, tapi buat data kosong belom. Paling tinggal dipakein "if" aja
 //Buat kasus kosong, harus ada fungsi yang mengosongkan struct. Di comment program kyknya bisa jadi fungsi mengosongkan struct.
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include "LIB-TUBES.h"
+#include "view_assistant.h"
 
 void View_Assistant(){
-    struct Dbs tabelOut;
     printf("|-----------------------------------------------|\n");
     printf("|Ruang Praktikum|LAB1\t|LAB2\t|LAB3\t|LSS\t|\n");
     printf("|---------------|-------|-------|-------|-------|\n");
