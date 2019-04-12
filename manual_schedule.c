@@ -14,6 +14,7 @@
 // 2. Christian Justin - 13217031 : Buat validasi
 // 3. Gihon Marten Tumbelaka - 13217038 : Buat validasi
 //***********************************************************//
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
