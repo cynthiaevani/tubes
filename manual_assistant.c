@@ -1,3 +1,19 @@
+//***********************************************************//
+//                      [ Source Code ]
+//
+// Institution: Institut Teknologi Bandung
+// Name: A2/4
+// File Name: manual_assistant.c
+// Dependency : stdio.h, stdlib.h, string.h
+//
+// Description:
+// Membuat assignment asisten secara manual berdasarkan input dari user
+//
+// Status:
+// 1. Christian Justin - 13217031 : Buat validasi
+// 2. Gihon Marten Tumbelaka - 13217038 : Buat validasi, fungsi manual_assistant nya
+//***********************************************************//
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
