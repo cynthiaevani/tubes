@@ -18,7 +18,7 @@
 //Untuk kasus terisi semua, tabel udh dirapiin, tapi buat data kosong belom. Paling tinggal dipakein "if" aja
 //Buat kasus kosong, harus ada fungsi yang mengosongkan struct. Di comment program kyknya bisa jadi fungsi mengosongkan struct.
 
-#include "view_assistant.h"
+#include "view.h"
 
 void View_Assistant(){
     printf("|-----------------------------------------------|\n");
