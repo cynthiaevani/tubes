@@ -1,3 +1,19 @@
+//***********************************************************//
+//                      [ Source Code ]
+//
+// Institution: Institut Teknologi Bandung
+// Name: A2/4
+// File Name: main.c
+// Dependency : stdio.h, stdlib.h, string.h, LIB-TUBES.h
+//
+// Description:
+// Membuat schedule secara manual berdasarkan input dari user
+//
+// Status:
+// 1. Cynthia Evani - 13217045 : Buat file
+// 2. Christian Justin - 13217031 : Buat validasi
+// 3. Gihon Marten Tumbelaka - 13217038 : Buat validasi
+//***********************************************************//
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -6,7 +22,7 @@
 // KASUS : PRAKTIKUM PMC SAMA ELKA BARENGAN
 // MASALAH : Rule Checker (file eksternal berisi hari libur nasional dan kelas atau ujian Mendadak)
 
-void getInput_Validation(){
+void manual_schedule(){
     char kodeprak[10], asst[10];
     struct inputpraktikum assign;
     struct Dbs tabelOut;
