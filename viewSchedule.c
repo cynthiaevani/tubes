@@ -24,7 +24,6 @@
 #include "LIB-TUBES.h"
 
 void View_Schedule(){
-    struct Dbs tabelOut;
     printf("|-------------------------------------------------------------------------------|\n");
     printf("|Ruang Praktikum|     LAB1\t|     LAB2\t|      LAB3\t|      LSS\t|\n");
     printf("|---------------|---------------|---------------|---------------|---------------|\n");
