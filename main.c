@@ -16,10 +16,8 @@
 //BELOM LENGKAP:
 //Link ke fungsinya
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "LIB-TUBES.h"
+#include "manual_schedule.h"
 
 //ASUMSI:
 //Nama proyek tidak lebih dari 30 karakter
