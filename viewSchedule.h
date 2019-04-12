@@ -3,11 +3,11 @@
 //
 // Institution: Institut Teknologi Bandung
 // Name: A2/4
-// File Name: manual_schedule.h
+// File Name: viewSchedule.h
 // Dependency : stdio.h, stdlib.h, string.h, LIB-TUBES.h
 //
 // Description:
-// Header untuk manual schedule.
+// Header untuk view schedule.
 //
 // Status:
 // 1. Cynthia Evani - 13217045 : Buat header viewSchedule
