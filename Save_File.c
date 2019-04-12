@@ -144,6 +144,32 @@ bool saveProject(Dbs_Type Dbs){
                         case 5: strcpy(Day,"Jumat"); break;
 
                     }}
+                
+                    switch(j){
+                        case 1:    fprintf(pFile, "%d;%s;%s;%s;%s;%s\n", i, Day, Dbs.Asist.(Senin)[1], Dbs.Asist.(Senin)[2]
+                            Dbs.Asist.(Senin)[3], Dbs.Asist.(Senin)[4]);
+                            break;
+                        
+                         case 2:    fprintf(pFile, "%d;%s;%s;%s;%s;%s\n", i, Day, Dbs.Asist.(Selasa)[1], Dbs.Asist.(Selasa)[2]
+                            Dbs.Asist.(Selasa)[3], Dbs.Asist.(Selasa)[4]);
+                            break;
+                            
+                         case 3:    fprintf(pFile, "%d;%s;%s;%s;%s;%s\n", i, Day, Dbs.Asist.(Rabu)[1], Dbs.Asist.(Rabu)[2]
+                            Dbs.Asist.(Rabu)[3], Dbs.Asist.(Rabu)[4]);
+                            break;
+                            
+                          case 4:    fprintf(pFile, "%d;%s;%s;%s;%s;%s\n", i, Day, Dbs.Asist.(Kamis)[1], Dbs.Asist.(Kamis)[2]
+                            Dbs.Asist.(Kamis)[3], Dbs.Asist.(Kamis)[4]);
+                            break;
+                            
+                            
+                           case 5:    fprintf(pFile, "%d;%s;%s;%s;%s;%s\n", i, Day, Dbs.Asist.(Jumat)[1], Dbs.Asist.(Jumat)[2]
+                            Dbs.Asist.(Jumat)[3], Dbs.Asist.(Jumat)[4]);
+                            break;
+                        
+                            
+                            
+                    }
 
                  /*   fprintf(pFile, "%d;%s;%s;%s;%s;%s\n", i, Day, Dbs.Asist.(Day)[1], Dbs.Asist.(Day)[2]
                             Dbs.Asist.(Day)[3], Dbs.Asist.(Day)[4]);
