@@ -18,6 +18,7 @@
 
 #include "LIB-TUBES.h"
 #include "manual_schedule.h"
+#include "view.h"
 
 //ASUMSI:
 //Nama proyek tidak lebih dari 30 karakter
