@@ -15,21 +15,12 @@
 // 3. Gihon Marten Tumbelaka - 13217038 : Buat validasi
 //***********************************************************//
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include "LIB-TUBES.h"
+#include "manual_schedule.h"
 
 // KASUS : PRAKTIKUM PMC SAMA ELKA BARENGAN
 // MASALAH : Rule Checker (file eksternal berisi hari libur nasional dan kelas atau ujian Mendadak)
 
 void manual_schedule(){
-    char kodeprak[10], asst[10];
-    struct inputpraktikum assign;
-    struct Dbs tabelOut;
-    int j;
-    int cekquit = 0;
-
     // INISIALISASI STRUCT TABEL DENGAN CHAR " "
     //for(int i = 0; i < 13; i++)
     //{
